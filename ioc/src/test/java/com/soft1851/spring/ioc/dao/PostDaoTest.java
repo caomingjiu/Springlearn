@@ -74,16 +74,18 @@ public class PostDaoTest {
     @Test
     public void getAllByKey() {
         List<Post> postList = postDao.getAllByKey("测试");
-        assertEquals(3,postList.size());
+        assertEquals(4,postList.size());
     }
 
-//    @Test
-//    public void batchDelete() {
-//        Post[] posts = {Post.builder().postId(2).build(),
-//                Post.builder().postId(3).build()
-//        };
-//        List<Post> postList = Arrays.asList(posts);
-//        int[] rows = postDao.batchDelete(postList);
-//        assertEquals(2,rows.length);
-//    }
+    @Test
+    public void batchDelete() {
+        int[] array={1,2,3};
+        int rows = postDao.batchDelete(array);
+        assertEquals(3,rows);
+    }
+
+    @Test
+    public void counts() {
+        System.out.println( postDao.counts(2));
+    }
 }

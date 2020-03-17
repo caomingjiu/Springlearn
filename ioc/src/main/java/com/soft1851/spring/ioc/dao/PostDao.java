@@ -29,8 +29,12 @@ public interface PostDao {
      */
     int delete(int postId);
 
-
-//    int[] batchDelete(List<Post> posts);
+    /**
+     * 批量删除
+     * @param posts
+     * @return
+     */
+    int batchDelete(int[] posts);
 
 
     /**
@@ -52,4 +56,8 @@ public interface PostDao {
      * @return
      */
     int update(Post post);
+    /**
+     * 统计某个论坛帖子的总数
+     */
+    int counts(int frontId);
 }
