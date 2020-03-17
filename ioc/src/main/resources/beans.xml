@@ -17,8 +17,22 @@
                 <value>编程</value>
             </list>
         </property>
+        <property name="subjects">
+            <set>
+                <value>c++</value>
+                <value>java</value>
+            </set>
+        </property>
     </bean>
-    
+    <bean id="teacher" class="com.soft1851.spring.ioc.entity.Teacher">
+        <property name="name" value="Tom"/>
+        <property name="other">
+            <map>
+                <entry key="专业" value="英语" />
+                <entry key="爱好" value="游泳"/>
+            </map>
+        </property>
+    </bean>
     <context:component-scan base-package="com.soft1851.spring.ioc.config"/>
 
 </beans>

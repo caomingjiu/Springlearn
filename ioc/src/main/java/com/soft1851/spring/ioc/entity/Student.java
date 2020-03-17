@@ -1,6 +1,7 @@
 package com.soft1851.spring.ioc.entity;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  * @author Tao
@@ -10,18 +11,30 @@ import java.util.List;
  * @date 2020-03-17 12:55
  **/
 public class Student {
-    private Integer id;
-    private String name;
-    private List<String> hobbies;
-
     @Override
     public String toString() {
         return "Student{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", hobbies=" + hobbies +
+                ", subjects=" + subjects +
                 '}';
     }
+
+    private Integer id;
+    private String name;
+    private List<String> hobbies;
+    private Set<String> subjects;
+    public Set<String> getSubjects() {
+        return subjects;
+    }
+
+    public void setSubjects(Set<String> subjects) {
+        this.subjects = subjects;
+    }
+
+
+
 
     public Integer getId() {
         return id;
@@ -50,9 +63,10 @@ public class Student {
     public Student() {
     }
 
-    public Student(Integer id, String name, List<String> hobbies) {
+    public Student(Integer id, String name, List<String> hobbies ,Set<String> subjects) {
         this.id = id;
         this.name = name;
         this.hobbies = hobbies;
+        this.subjects=subjects;
     }
 }

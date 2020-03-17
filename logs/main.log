@@ -1,1 +1,5 @@
 2020-03-17.20:10:14 INFO  [main] com.soft1851.spring.ioc.app.TestStudent.main:22  Student{id=1802333117, name='Tom', hobbies=[篮球, 编程]}
+2020-03-17.20:43:43 INFO  [main] com.soft1851.spring.ioc.app.TestTeacher.main:15  Teacher{name='Tom', other={专业：=英语, 爱好=游泳}}
+2020-03-17.20:52:58 INFO  [main] com.soft1851.spring.ioc.app.TestStudent.main:22  Student{id=1802333117, name='Tom', hobbies=[篮球, 编程], subjects=[c++, java]}
+2020-03-17.20:58:36 INFO  [main] com.soft1851.spring.ioc.app.TestTeacher.main:15  Teacher{name='Tom', other={专业=英语, 爱好=游泳}}
+2020-03-17.20:58:48 INFO  [main] com.soft1851.spring.ioc.app.TestStudent.main:22  Student{id=1802333117, name='Tom', hobbies=[篮球, 编程], subjects=[c++, java]}
